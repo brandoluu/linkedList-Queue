@@ -59,7 +59,7 @@ void Queue::push(string s) {
     else{
         tail->next = toAdd; 
         tail = tail->next; 
-        //don't have to reassing head pointer since it is already pointing to end.
+        //don't have to reassign head pointer since it is already pointing to end.
     }
     numElements += 1; 
 }
@@ -67,7 +67,6 @@ void Queue::push(string s) {
 /**
  * Implement pop() correctly without memory leaks
  */
-// =================== ERROR TO DEBUG, SEG FAULT WHEN CALLING HEAD->NEXT; ===================
 string Queue::pop() {
     /* YOUR CODE HERE */
     Node * toDelete = head; 
